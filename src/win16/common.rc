@@ -1,0 +1,54 @@
+/*************************************************/
+/* WinAmp Control Centre                         */
+/* Version 1.4.2                                 */
+/*                                               */
+/* Copyright (c) Owen Rudge 2001-2015            */
+/*************************************************/
+
+/*
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program; if not, write to the Free Software Foundation, Inc.,
+ * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
+#include <ver.h>
+
+1 VERSIONINFO 
+FILEVERSION 1, 4, 2, 0
+PRODUCTVERSION 1, 4, 2, 0
+FILEOS VOS__WINDOWS16
+FILETYPE VFT_APP
+{
+ BLOCK "StringFileInfo"
+ {
+  BLOCK "040904E4"
+  {
+   VALUE "CompanyName", "Owen Rudge\000\000"
+   VALUE "FileDescription", "Winamp Control Centre\000"
+   VALUE "FileVersion", "1.4.2\000\000"
+   VALUE "InternalName", INTERNALNAME
+   VALUE "LegalCopyright", "Copyright © Owen Rudge 2001-2015. All Rights Reserved.\000\000"
+   VALUE "OriginalFilename", ORIGINALFILENAME
+   VALUE "ProductName", "Winamp Control Centre\000"
+   VALUE "ProductVersion", "1.4.2\000\000"
+  }
+
+ }
+
+ BLOCK "VarFileInfo"
+ {
+  VALUE "Translation", 0x0809, 1252
+ }
+
+}
+

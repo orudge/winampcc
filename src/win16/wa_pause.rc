@@ -1,0 +1,6 @@
+1 ICON "../icons/pause.ico"
+
+#define INTERNALNAME "wa_pause\000"
+#define ORIGINALFILENAME "wa_pause.exe\000"
+
+#include "common.rc"

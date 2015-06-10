@@ -1,0 +1,6 @@
+1 ICON "../icons/prev.ico"
+
+#define INTERNALNAME "wa_prev\000"
+#define ORIGINALFILENAME "wa_prev.exe\000"
+
+#include "common.rc"

@@ -1,0 +1,6 @@
+1 ICON "../icons/stop.ico"
+
+#define INTERNALNAME "wa_stop\000"
+#define ORIGINALFILENAME "wa_stop.exe\000"
+
+#include "common.rc"

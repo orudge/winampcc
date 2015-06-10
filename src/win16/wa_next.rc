@@ -1,0 +1,6 @@
+1 ICON "../icons/next.ico"
+
+#define INTERNALNAME "wa_next\000"
+#define ORIGINALFILENAME "wa_next.exe\000"
+
+#include "common.rc"

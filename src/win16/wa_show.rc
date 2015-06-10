@@ -1,0 +1,4 @@
+#define INTERNALNAME "wa_show\000"
+#define ORIGINALFILENAME "wa_show.exe\000"
+
+#include "common.rc"

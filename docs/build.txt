@@ -1,0 +1,31 @@
+WINAMP CONTROL CENTRE
+Version 1.4.2
+
+Building Winamp Control Centre
+==============================
+
+Winamp Control Centre was originally developed with Watcom C/C++, which now
+lives on as an open source product, Open Watcom. Open Watcom's home page is
+http://www.openwatcom.org/, but as of June 2015 that site appears to be down.
+However, an active fork of Open Watcom is available here:
+
+https://github.com/open-watcom/open-watcom-v2
+
+This includes lots of new features, including a 64-bit Windows hosted version
+of Watcom.
+
+To build Winamp Control Centre, simply open the src\winampcc.wpj project in
+the Watcom IDE and choose Actions -> Make All.
+
+If you prefer to use another compiler to build WinampCC, you should find it
+compiles without much trouble. The source code for the 32-bit application,
+WinampCC.exe, is contained within the src\win32 directory, and should build
+on any standard Win32 C compiler. Microsoft Visual C++ has been tested
+recently with success, although I have not include a project or makefile for
+it. Feel free to contribute build scripts or project files to the WinampCC
+GitHub project if desired.
+
+The 16-bit version, if anybody is still interested in it, should again build
+with any competent compiler - I believe I compiled it with Borland C++ 4.51
+some years ago. I expect 16-bit versions of Visual C++ or its predecessors
+should also be able to build it.

@@ -1,0 +1,6 @@
+1 ICON "../icons/play.ico"
+
+#define INTERNALNAME "wa_play\000"
+#define ORIGINALFILENAME "wa_play.exe\000"
+
+#include "common.rc"

@@ -1,0 +1,4 @@
+#define INTERNALNAME "wa_hide\000"
+#define ORIGINALFILENAME "wa_hide.exe\000"
+
+#include "common.rc"
