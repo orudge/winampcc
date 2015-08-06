@@ -1,6 +1,6 @@
 /*************************************************/
 /* WinAmp Control Centre                         */
-/* Version 1.4.2                                 */
+/* Version 1.4.3                                 */
 /*                                               */
 /* Copyright (c) Owen Rudge 2001-2015            */
 /*************************************************/
@@ -31,6 +31,7 @@
 int CheckCommandLine(int argc, char **argv, char *cmd);
 int ParseCommandLine(char *line, char **argv, int max_argc);
 void RunThroughCmdLineOptions(int argc, char **argv, HWND hwndWinamp, char *szINIFileName);
+void PlayPause(HWND hwndWinamp);
 
 char copyright_str[] = "Winamp Control Centre 1.4.2. Copyright \xA9 Owen Rudge 2001-2015. All Rights Reserved. www.owenrudge.net";
 char build_date[] = "Built on " __DATE__ " at " __TIME__ ".";
@@ -223,6 +224,10 @@ void RunThroughCmdLineOptions(int argc, char **argv, HWND hwndWinamp, char *szIN
 		{
 			SetForegroundWindow(hwndWinamp);
 		}
+		else if (IS_COMMAND_LINE_ARG("/PLAYPAUSE", i) == 0)
+		{
+			PlayPause(hwndWinamp);
+		}
 		else
 		{
 			if (IS_COMMAND_LINE_ARG("/PLAY", i) == 0)
@@ -245,4 +250,20 @@ void RunThroughCmdLineOptions(int argc, char **argv, HWND hwndWinamp, char *szIN
 			}
 		}
 	}
+}
+
+void PlayPause(HWND hwndWinamp)
+{
+	UINT uMsg;
+	int ret;
+
+	// Get current playback status
+	ret = SendMessage(hwndWinamp, WM_USER, 0, 104);
+
+	if (ret == 1) // Currently playing
+		uMsg = 40046; // Pause
+	else // Currently paused or stopped
+		uMsg = 40045;
+
+	SendMessage(hwndWinamp, WM_COMMAND, uMsg, (DWORD)NULL);
 }
