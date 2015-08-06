@@ -1,5 +1,5 @@
 WINAMP CONTROL CENTRE
-Version 1.4.2
+Version 1.4.3
 
 Copyright © Owen Rudge 2001-2015
 ================================
@@ -55,12 +55,13 @@ The following command-line arguments are available by default:
 /PREV          Plays the previous track
 /FLIPSHOW      Show Winamp if it's hidden, hide it if it's visible
 /TOFRONT       Brings Winamp to the front of the screen
+/PLAYPAUSE     Pauses/unpauses Winamp if currently playing; starts playing if stopped
 
 However, WinampCC is customisable, in that you can add new actions.
 This is what winampcc.ini is for. If you look at it, you'll see the
 following (by default):
 
-   ; Winamp Control Centre 1.4.2
+   ; Winamp Control Centre 1.4.3
    ; Configuration File
    ;
    ; See README.TXT for more information
@@ -238,7 +239,12 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 VERSION HISTORY
 ===============
 
-Version 1.4.2 does not contain any new functionality, but marks the open
+New in version 1.4.3 is the /PLAYPAUSE switch, enabling you to start playing
+music if Winamp is currently stopped, or pause/unpause if Winamp is currently
+playing. Handy if, like me, you have a combined Play/Pause button on your keyboard
+that you want to map.
+
+Version 1.4.2 did not contain any new functionality, but marked the open
 source release of Winamp Control Centre under the GNU General Public License.
 The source code for Winamp Control Centre can be downloaded from
 www.owenrudge.net/utils/winampcc, and if you wish to offer modifications,
@@ -274,7 +280,7 @@ will also be faster on Windows NT/2000/XP.
 If you have any problems, comments or queries about this software, e-mail
 me - contact details are available at www.owenrudge.net/contact.
 
-Owen Rudge, 10th June 2015
+Owen Rudge, 6th August 2015
 http://www.owenrudge.net/
 
 ----------------------------------------------------------------------------------
