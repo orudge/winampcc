@@ -1,7 +1,5 @@
 /*************************************************/
 /* WinAmp Control Centre                         */
-/* Version 1.4.3                                 */
-/*                                               */
 /* Copyright (c) Owen Rudge 2001-2015            */
 /*************************************************/
 
@@ -33,7 +31,7 @@ int ParseCommandLine(char *line, char **argv, int max_argc);
 void RunThroughCmdLineOptions(int argc, char **argv, HWND hwndWinamp, char *szINIFileName);
 void PlayPause(HWND hwndWinamp);
 
-char copyright_str[] = "Winamp Control Centre 1.4.2. Copyright \xA9 Owen Rudge 2001-2015. All Rights Reserved. www.owenrudge.net";
+char copyright_str[] = "Winamp Control Centre 1.4.3. Copyright \xA9 Owen Rudge 2001-2015. Licensed under the GNU General Public Licence version 2 or later.";
 char build_date[] = "Built on " __DATE__ " at " __TIME__ ".";
 
 BOOLEAN PathOnCmdLine = FALSE;
